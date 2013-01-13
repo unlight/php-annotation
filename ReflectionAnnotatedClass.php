@@ -33,9 +33,9 @@ class ReflectionAnnotatedClass extends ReflectionClass {
         return $this->createReflectionMethod(parent::getMethod($name));
     }
 
-    public function getMethods() {
+    public function getMethods($filter = '') {
         $methods = array();
-        foreach (parent::getMethods() as $method) {
+        foreach (parent::getMethods($filter) as $method) {
             $methods[] = $this->createReflectionMethod($method);
         }
         return $methods;
@@ -49,9 +49,9 @@ class ReflectionAnnotatedClass extends ReflectionClass {
         return $this->createReflectionProperty(parent::getProperty($name));
     }
 
-    public function getProperties() {
+    public function getProperties($filter = 0) {
         $properties = array();
-        foreach (parent::getProperties() as $property) {
+        foreach (parent::getProperties($filter) as $property) {
             $properties[] = $this->createReflectionProperty($property);
         }
         return $properties;
