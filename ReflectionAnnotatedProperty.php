@@ -5,7 +5,7 @@ class ReflectionAnnotatedProperty extends ReflectionProperty {
 
     public function __construct($class, $propertyName) {
         parent::__construct($class, $propertyName);
-        $this->annotations = Annotation_build($this);
+        $this->annotations = Annotation_build::do($this);
     }
 
     public function hasAnnotation($annotation) {

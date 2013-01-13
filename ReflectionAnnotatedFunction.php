@@ -6,7 +6,7 @@ class ReflectionAnnotatedFunction extends ReflectionFunction {
 
     public function __construct($functionName) {
         parent::__construct($functionName);
-        $this->annotations = Annotation_build($this);
+        $this->annotations = Annotation_build::do($this);
     }
 
     public function hasAnnotation($annotation) {
