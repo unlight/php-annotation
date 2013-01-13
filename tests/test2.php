@@ -1,4 +1,5 @@
 <?php
+
 require_once 'Reflection.php';
 
 class ContactAnnotation extends Annotation {
