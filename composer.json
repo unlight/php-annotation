@@ -1,0 +1,17 @@
+{
+    "name": "iamthes/php-annotation",
+    "description": "Annotation library for PHP.",
+    "authors": [
+        {
+            "name": "grom358",
+            "homepage": "https://github.com/grom358"
+        },
+        {
+            "name": "iamthes",
+            "homepage": "http://rv-home.ru"
+        }        
+    ],
+    "autoload": {
+        "classmap": ""
+    }
+}
