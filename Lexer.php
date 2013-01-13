@@ -1,7 +1,9 @@
 <?php
+
 require_once dirname(__FILE__) . '/Token.php';
 
 class AnnotationLexer {
+    
     private $string;
     private $length; // Length of $string
     private $index = 0;

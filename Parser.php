@@ -6,7 +6,6 @@ require_once $FILE_PATH . '/Token.php';
 require_once $FILE_PATH . '/TokenBuffer.php';
 require_once $FILE_PATH . '/Lexer.php';
 require_once $FILE_PATH . '/ParseException.php';
-require_once $FILE_PATH . '/AnnotationParser.php';
 
 
 /**

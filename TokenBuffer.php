@@ -1,5 +1,7 @@
 <?php
+
 class TokenBuffer {
+    
     private $tokenQueue;
     private $lexer;
 
@@ -47,4 +49,3 @@ class TokenBuffer {
         return $token;
     }
 }
-

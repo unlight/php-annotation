@@ -1,5 +1,7 @@
 <?php
+
 class Token {
+    
     const LPAREN = 'LPAREN';
     const RPAREN = 'RPAREN';
     const COMMA = 'COMMA';

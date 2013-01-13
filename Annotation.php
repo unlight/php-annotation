@@ -1,5 +1,7 @@
 <?php
+
 class Annotation {
+    
     private $annotationName;
     private $annotationString;
 
