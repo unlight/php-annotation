@@ -77,3 +77,22 @@ class AnnotationParser {
         return $annotations;
     }
 }
+
+/**
+ * Match regular expression at start of $subject and return the match
+ * and the remaining unmatched text from $subject
+ *
+ * @param string $regex Regular Expression
+ * @param string $subject String to match
+ * @param string $match The matched string
+ * @param string $remaining Remaining unmatched $subject
+ * @return bool Return wether the regular expression matched
+ */
+function match($regex, $subject, &$match, &$remaining) {
+    if (preg_match("/^$regex/", $subject, $matches)) {
+        $match = $matches[0];
+        $remaining = substr($subject, strlen($match));
+        return true;
+    }
+    return false;
+}
