@@ -1,5 +1,6 @@
 {
     "name": "iamthes/php-annotation",
+    "version": "1.0.1",
     "description": "Annotation library for PHP.",
     "authors": [
         {
@@ -12,6 +13,6 @@
         }        
     ],
     "autoload": {
-        "classmap": ""
+        "classmap": [""]
     }
 }
