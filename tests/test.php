@@ -1,5 +1,5 @@
 <?php
-require_once 'Reflection.php';
+require_once dirname(__FILE__) . '/../Reflection.php';
 
 /**
  * Example of allowed annotations
