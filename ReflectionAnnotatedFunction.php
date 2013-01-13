@@ -1,6 +1,7 @@
 <?php
 
 class ReflectionAnnotatedFunction extends ReflectionFunction {
+    
     private $annotations;
 
     public function __construct($functionName) {

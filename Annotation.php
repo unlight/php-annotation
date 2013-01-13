@@ -4,6 +4,7 @@ class Annotation {
     
     private $annotationName;
     private $annotationString;
+    public $value;
 
     public function __construct($name, $string, $attributes) {
         $this->annotationName = $name;

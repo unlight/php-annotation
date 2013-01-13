@@ -37,7 +37,7 @@ class AnnotationParser {
                     $tag = "";
                 }
             }
-            if ($line[0] == '@') {
+            if (isset($line[0]) && $line[0] == '@') {
                 $tag = $line;
             } elseif ($tag != "") {
                 $tag .= ' ' . $line;
